@@ -21,8 +21,8 @@ export default class webapp {
     }
 
     loadMiddleware() {
-        this.express.use(cors({ origin: "http://localhost:3000" }));
-        this.express.options("*", cors());
+        // this.express.use(cors({ origin: "http://localhost:3000" }));
+        // this.express.options("*", cors());
         this.express.use(bodyParser.json());
         this.express.use(bodyParser.urlencoded({ extended: true }));
         components?.forEach((comp) => {

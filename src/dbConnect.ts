@@ -1,7 +1,7 @@
 import * as mongoose from "mongoose";
 
 export async function dbConnect(uri: string = process.env.MONGO_URL) {
-    if (!uri) uri = `mongodb://root:example@localhost/citrouille`;
+    if (!uri) uri = `mongodb://root:example@localhost/federator`;
     try {
         let odm = await mongoose.connect(uri, {
             useNewUrlParser: true,
