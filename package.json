@@ -21,6 +21,7 @@
         "express": "^4.17.1",
         "form-urlencoded": "^4.2.1",
         "mongoose": "^5.9.13",
+        "supertest": "^5.0.0",
         "mongoose-autopopulate": "^0.12.2"
     },
     "devDependencies": {
@@ -36,7 +37,6 @@
         "jest": "^26.0.1",
         "jest-junit": "^10.0.0",
         "mongodb-memory-server": "^6.6.1",
-        "supertest": "^5.0.0",
         "ts-jest": "^26.0.0",
         "typescript": "^4.0.2"
     },
