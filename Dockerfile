@@ -16,7 +16,7 @@ WORKDIR /app
 
 COPY package.json yarn.lock ./
 
-RUN yarn --prod
+RUN yarn
 
 COPY --from=build /app/dist ./
 
