@@ -17,4 +17,7 @@ let handler: express.RequestHandler = async function (req, res, next) {
 
 routesToApply.push((router) => {
     router.post("/", handler);
+    router.get("/tata", (_req, res) => {
+        res.send({ msg: "bonjour" });
+    });
 });
