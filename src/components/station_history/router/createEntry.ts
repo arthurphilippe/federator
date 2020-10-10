@@ -9,6 +9,7 @@ let handler: express.RequestHandler = async function (req, res, next) {
         let entry = new stationHistory.model(req.body);
 
         await entry.save();
+        res.sendStatus(201);
     } catch (err) {
         next(err);
     }

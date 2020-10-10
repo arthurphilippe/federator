@@ -5,7 +5,8 @@
         "auto-index": "index-generator src .auto-index",
         "build": "index-generator src .auto-index && tsc",
         "start": "node --unhandled-rejections=strict dist/index.js",
-        "dev": "ts-node src/index.ts"
+        "dev": "ts-node src/index.ts",
+        "test": "jest --runInBand --detectOpenHandles"
     },
     "description": "A template for a structured web API using mongoose.",
     "main": "src/index.ts",
@@ -31,9 +32,11 @@
         "@types/jest": "^25.2.3",
         "@types/mongoose": "^5.7.21",
         "@types/node": "^14.0.10",
+        "@types/supertest": "^2.0.10",
         "jest": "^26.0.1",
         "jest-junit": "^10.0.0",
         "mongodb-memory-server": "^6.6.1",
+        "supertest": "^5.0.0",
         "ts-jest": "^26.0.0",
         "typescript": "^4.0.2"
     },

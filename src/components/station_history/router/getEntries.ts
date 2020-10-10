@@ -25,15 +25,6 @@ let handler: express.Handler = async (req, res) => {
     res.send(await query);
 };
 
-// let handler: express.Handler = async (req, res, next) => {
-
-//     try {
-
-//     } catch (err) {
-//         next(err);
-//     }
-// };
-
 routesToApply.push((router) => {
     // middlewares would be added here, before "handler"
     router.get("/", handler);

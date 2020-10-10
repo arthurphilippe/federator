@@ -11,14 +11,14 @@ import {
 @modelOptions({ schemaOptions: { timestamps: true } })
 @index({ ipAddr: "text", loggedIn: "text", hostname: "text" })
 export class StationHistory {
-    @prop()
-    ipAddr: string;
+    @prop({ required: true })
+    ipAddr!: string;
 
     @prop()
-    hostname: string;
+    hostname?: string;
 
     @prop()
-    loggedIn: string[];
+    loggedIn?: string[];
 }
 
 // This produces the model, which is the object to use when queriying the database.

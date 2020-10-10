@@ -1,10 +1,10 @@
 import { MongoMemoryServer } from "mongodb-memory-server";
 import * as mongoose from "mongoose";
 
-const mongoServer = new MongoMemoryServer();
+export const server = new MongoMemoryServer();
 
 export async function memoryDbConnect() {
-    let mongoUri = await mongoServer.getUri();
+    let mongoUri = await server.getUri();
     const mongooseOpts = {
         // options for mongoose 4.11.3 and above
         // autoReconnect: true,
